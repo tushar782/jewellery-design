@@ -29,7 +29,7 @@ const Jewellery = () => {
                 {collections.map((item) => (
                     <div
                         key={item.id}
-                        className="relative w-[198px] h-[200px] group flex-shrink-0 overflow-hidden rounded-lg shadow-lg"
+                        className="relative w-[198px] h-[200px] group flex-shrink-0 overflow-hidden shadow-lg"
                     >
                         <img
                             src={item.image}

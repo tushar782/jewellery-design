@@ -19,7 +19,7 @@ const Seller = () => {
           {products.map(product => (
             <div 
               key={product.id} 
-              className="relative overflow-hidden rounded-lg shadow-lg bg-white hover:shadow-xl transition-shadow duration-300"
+              className="relative overflow-hidden shadow-lg bg-white hover:shadow-xl transition-shadow duration-300"
             >
               <div className="relative pt-[133%]"> {/* 4:3 aspect ratio */}
                 <img 
@@ -45,7 +45,7 @@ const Seller = () => {
         </div>
 
         {/* Rectangular Card */}
-        <div className="w-full md:w-[90%] lg:w-[80%] bg-black mt-8 md:mt-16 mx-auto rounded-lg shadow-lg">
+        <div className="w-full md:w-[90%] lg:w-[80%] bg-black mt-8 md:mt-16 mx-auto shadow-lg">
           <div className="flex flex-col md:flex-row items-center p-4 md:p-8 space-y-4 md:space-y-0">
             {/* Left side text */}
             <div className="text-white w-full md:w-1/2 text-center md:text-left">

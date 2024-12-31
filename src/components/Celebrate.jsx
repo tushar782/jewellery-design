@@ -17,10 +17,10 @@ const Celebrate = () => {
             <div className="container mx-auto px-2 sm:px-4 py-4 sm:py-8 lg:py-16">
                 <div className="flex flex-col lg:flex-row justify-center gap-4">
                     {/* First section */}
-                    <div className="w-full lg:w-1/2 h-auto lg:h-[550px] relative overflow-hidden rounded-lg shadow-lg">
+                    <div className="w-full lg:w-1/2 h-auto lg:h-[550px] relative overflow-hidden shadow-lg">
                         <div className="absolute inset-0 flex flex-col justify-center items-center lg:items-start p-4 sm:p-6 lg:px-16">
                             <div className="flex flex-col sm:flex-row gap-2 w-full">
-                                <div className="w-full sm:w-[48%] lg:w-[350px] h-[300px] sm:h-[400px] lg:h-[480px] bg-black shadow-xl overflow-hidden rounded-lg">
+                                <div className="w-full sm:w-[48%] lg:w-[350px] h-[300px] sm:h-[400px] lg:h-[480px] bg-black shadow-xl overflow-hidden">
                                     <div
                                         className="w-full h-full bg-cover bg-center relative"
                                         style={{ backgroundImage: `url(${gold})` }}
@@ -34,7 +34,7 @@ const Celebrate = () => {
                                     </div>
                                 </div>
 
-                                <div className="w-full sm:w-[48%] lg:w-[350px] h-[300px] sm:h-[400px] lg:h-[480px] bg-black shadow-xl overflow-hidden rounded-lg">
+                                <div className="w-full sm:w-[48%] lg:w-[350px] h-[300px] sm:h-[400px] lg:h-[480px] bg-black shadow-xl overflow-hidden">
                                     <div
                                         className="w-full h-full bg-cover bg-center relative"
                                         style={{ backgroundImage: `url(${diamond})` }}
@@ -52,10 +52,10 @@ const Celebrate = () => {
                     </div>
 
                     {/* Second section */}
-                    <div className="w-full lg:w-1/2 h-auto lg:h-[560px] relative overflow-hidden rounded-lg shadow-lg">
+                    <div className="w-full lg:w-1/2 h-auto lg:h-[560px] relative overflow-hidden shadow-lg">
                         <div className="absolute inset-0 flex flex-col justify-center items-center lg:items-start p-4 sm:p-6 lg:px-16">
                             <div className="flex flex-col gap-4 w-full">
-                                <div className="w-full lg:w-[470px] h-[200px] sm:h-[220px] lg:h-[240px] bg-black shadow-xl overflow-hidden rounded-lg">
+                                <div className="w-full lg:w-[470px] h-[200px] sm:h-[220px] lg:h-[240px] bg-black shadow-xl overflow-hidden">
                                     <div
                                         className="w-full h-full bg-cover bg-center relative"
                                         style={{ backgroundImage: `url(${traditional})` }}
@@ -69,7 +69,7 @@ const Celebrate = () => {
                                     </div>
                                 </div>
 
-                                <div className="w-full lg:w-[470px] h-[200px] sm:h-[220px] lg:h-[240px] bg-black shadow-xl overflow-hidden rounded-lg">
+                                <div className="w-full lg:w-[470px] h-[200px] sm:h-[220px] lg:h-[240px] bg-black shadow-xl overflow-hidden">
                                     <div
                                         className="w-full h-full bg-cover bg-center relative"
                                         style={{ backgroundImage: `url(${wedding})` }}
