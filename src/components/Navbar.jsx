@@ -38,11 +38,11 @@ const Navbar = () => {
       </div>
 
       <ul className="hidden xl:flex items-center font-semibold text-base">
-        <li className="hover:bg-sky-300 hover:text-white rounded-md transition-all cursor-pointer">
-          <a className="px-5 py-3 block">HOME</a>
+        <li className="hover:bg-sky-300 hover:text-white transition-all cursor-pointer">
+          <a className="px-5 py-2 block">HOME</a>
         </li>
         <li className="relative group">
-          <div className="px-5 py-3 hover:bg-sky-300 hover:text-white rounded-md transition-all cursor-pointer flex items-center gap-0.5">
+          <div className="px-5 py-2 hover:bg-sky-300 hover:text-white transition-all cursor-pointer flex items-center gap-0.5">
             COLLECTIONS
             <FontAwesomeIcon icon={faAngleDown} className="text-sm ml-1" />
           </div>
@@ -86,11 +86,11 @@ const Navbar = () => {
             </div>
           </div>
         </li>
-        <li className="hover:bg-sky-300 hover:text-white rounded-md transition-all cursor-pointer">
-          <a className="px-5 py-3 block">About</a>
+        <li className="hover:bg-sky-300 hover:text-white transition-all cursor-pointer">
+          <a className="px-5 py-2 block">About</a>
         </li>
-        <li className="hover:bg-sky-300 hover:text-white rounded-md transition-all cursor-pointer">
-          <a onClick={handleContactClick} className="px-5 py-3 block cursor-pointer">Contact Us</a>
+        <li className="hover:bg-sky-300 hover:text-white transition-all cursor-pointer">
+          <a onClick={handleContactClick} className="px-5 py-2 block cursor-pointer">Contact Us</a>
         </li>
       </ul>
 
