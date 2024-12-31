@@ -12,6 +12,17 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleContactClick = () => {
+    // Close the mobile menu
+    setIsMenuOpen(false);
+    
+    // Smooth scroll to footer
+    const footer = document.querySelector('footer');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="relative flex justify-between items-center text-black py-4 px-8 md:px-32 bg-white shadow-md z-50">
       <div className="flex flex-col text-center font-bold">
@@ -56,14 +67,14 @@ const Navbar = () => {
               {/* Right side - Images */}
               <div className="w-1/2 p-3">
                 <div className="grid grid-cols-2 gap-2 h-full">
-                  <div className="h-32 overflow-hidden rounded-md">
+                  <div className="h-32 overflow-hidden">
                     <img 
                       src={traditional} 
                       alt="Traditional Jewelry" 
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                  <div className="h-32 overflow-hidden rounded-md">
+                  <div className="h-32 overflow-hidden">
                     <img 
                       src={wedding} 
                       alt="Wedding Jewelry" 
@@ -79,7 +90,7 @@ const Navbar = () => {
           <a className="px-5 py-3 block">About</a>
         </li>
         <li className="hover:bg-sky-300 hover:text-white rounded-md transition-all cursor-pointer">
-          <a className="px-5 py-3 block">Contact Us</a>
+          <a onClick={handleContactClick} className="px-5 py-3 block cursor-pointer">Contact Us</a>
         </li>
       </ul>
 
@@ -99,7 +110,7 @@ const Navbar = () => {
             <li className="p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer">
               About
             </li>
-            <li className="p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer">
+            <li className="p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer" onClick={handleContactClick}>
               Contact
             </li>
           </ul>
