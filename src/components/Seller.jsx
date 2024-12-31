@@ -13,26 +13,29 @@ const Seller = () => {
 
   return (
     <div>
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-8 md:py-16">
         {/* Product Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           {products.map(product => (
-            <div key={product.id} className="relative overflow-hidden rounded-lg shadow-lg">
-              <div className="aspect-w-3 aspect-h-4 w-full">
+            <div 
+              key={product.id} 
+              className="relative overflow-hidden rounded-lg shadow-lg bg-white hover:shadow-xl transition-shadow duration-300"
+            >
+              <div className="relative pt-[133%]"> {/* 4:3 aspect ratio */}
                 <img 
                   src={product.image} 
                   alt={`Product ${product.id}`}
-                  className="w-full h-full object-cover"
+                  className="absolute top-0 left-0 w-full h-full object-cover"
                 />
               </div>
 
-              <div className="p-4">
-                {/* Text below the image */}
-                <h3 className="text-xl font-semibold text-center mb-4">{product.title}</h3>
+              <div className="p-3 md:p-4">
+                <h3 className="text-lg md:text-xl font-semibold text-center mb-3 md:mb-4">
+                  {product.title}
+                </h3>
 
-                {/* Explore button */}
                 <div className="text-center">
-                  <button className="bg-black text-white px-8 py-2 border border-white transition-colors duration-300">
+                  <button className="w-full sm:w-auto bg-black text-white px-4 md:px-8 py-2 text-sm md:text-base border border-white hover:bg-gray-800 transition-colors duration-300">
                     EXPLORE NOW
                   </button>
                 </div>
@@ -41,19 +44,25 @@ const Seller = () => {
           ))}
         </div>
 
-        {/* Rectangular Card below Product Cards */}
-         <div className="w-[80%] max-w-[1100px] h-48 bg-black mt-16 mx-auto flex items-center justify-between p-8 shadow-lg">
-          {/* Left side text */}
-          <div className="text-white w-1/2">
-            <h2 className="text-2xl font-bold font-serif mb-4">Gold Mine 12+1  Monthly Plan</h2>
-            <p className="text-lg-x5">Pay 10 intallments, get 25% Off in 1st +  100% Off on last</p>
-          </div>
+        {/* Rectangular Card */}
+        <div className="w-full md:w-[90%] lg:w-[80%] bg-black mt-8 md:mt-16 mx-auto rounded-lg shadow-lg">
+          <div className="flex flex-col md:flex-row items-center p-4 md:p-8 space-y-4 md:space-y-0">
+            {/* Left side text */}
+            <div className="text-white w-full md:w-1/2 text-center md:text-left">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-serif mb-2 md:mb-4">
+                Gold Mine 12+1 Monthly Plan
+              </h2>
+              <p className="text-sm md:text-base lg:text-lg">
+                Pay 10 installments, get 25% Off in 1st + 100% Off on last
+              </p>
+            </div>
 
-          {/* Right side Explore button */}
-          <div className="flex items-center justify-center w-1/2">
-            <button className="bg-white text-black px-8 py-2 border border-white transition-colors duration-300">
-              Explore Now
-            </button>
+            {/* Right side Explore button */}
+            <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+              <button className="w-full md:w-auto bg-white text-black px-6 md:px-8 py-2 text-sm md:text-base border border-white hover:bg-gray-100 transition-colors duration-300">
+                Explore Now
+              </button>
+            </div>
           </div>
         </div>
       </div>

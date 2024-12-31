@@ -2,6 +2,7 @@ import gold from '../assets/goldcard.jpg';
 import diamond from '../assets/j1.jpg';
 import traditional from '../assets/j5.jpg';
 import wedding from '../assets/j4.jpg';
+import { FaArrowRight } from "react-icons/fa";
 
 const Celebrate = () => {
     return (
@@ -25,8 +26,9 @@ const Celebrate = () => {
                                         style={{ backgroundImage: `url(${gold})` }}
                                     >
                                         <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 lg:p-6">
-                                            <button className="w-full sm:w-[90%] lg:w-[300px] py-2 bg-white text-black text-sm sm:text-base mx-auto block">
-                                                Anniversaries
+                                            <button className="w-full sm:w-[90%] lg:w-[250px] py-2 bg-white text-black text-sm sm:text-base mx-auto block flex items-center justify-between px-4">
+                                                <span>Anniversaries</span>
+                                                <FaArrowRight className="text-black" />
                                             </button>
                                         </div>
                                     </div>
@@ -38,8 +40,9 @@ const Celebrate = () => {
                                         style={{ backgroundImage: `url(${diamond})` }}
                                     >
                                         <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 lg:p-6">
-                                            <button className="w-full sm:w-[90%] lg:w-[250px] py-2 bg-white text-black text-sm sm:text-base mx-auto block">
-                                                Birthdays
+                                            <button className="w-full sm:w-[90%] lg:w-[250px] py-2 bg-white text-black text-sm sm:text-base mx-auto block flex items-center justify-between px-4">
+                                                <span>Birthdays</span>
+                                                <FaArrowRight className="text-black" />
                                             </button>
                                         </div>
                                     </div>
@@ -58,8 +61,9 @@ const Celebrate = () => {
                                         style={{ backgroundImage: `url(${traditional})` }}
                                     >
                                         <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 lg:p-6">
-                                            <button className="w-full py-2 sm:py-3 bg-white text-black text-sm sm:text-base">
-                                                Milestones
+                                            <button className="w-full py-2 sm:py-3 bg-white text-black text-sm sm:text-base flex items-center justify-between px-4">
+                                                <span>Milestones</span>
+                                                <FaArrowRight className="text-black" />
                                             </button>
                                         </div>
                                     </div>
@@ -71,8 +75,9 @@ const Celebrate = () => {
                                         style={{ backgroundImage: `url(${wedding})` }}
                                     >
                                         <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 lg:p-6">
-                                            <button className="w-full py-2 sm:py-3 bg-white text-black text-sm sm:text-base">
-                                                Engagements
+                                            <button className="w-full py-2 sm:py-3 bg-white text-black text-sm sm:text-base flex items-center justify-between px-4">
+                                                <span>Engagements</span>
+                                                <FaArrowRight className="text-black" />
                                             </button>
                                         </div>
                                     </div>
