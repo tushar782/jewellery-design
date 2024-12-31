@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import traditional from '../assets/j5.jpg';
+import wedding from '../assets/j4.jpg';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,37 +26,60 @@ const Navbar = () => {
         </span>
       </div>
 
-      <ul className="hidden xl:flex items-center gap-12 font-semibold text-base">
-        <li className="p-3 hover:bg-sky-300 hover:text-white rounded-md transition-all cursor-pointer">
-          HOME
+      <ul className="hidden xl:flex items-center font-semibold text-base">
+        <li className="hover:bg-sky-300 hover:text-white rounded-md transition-all cursor-pointer">
+          <a className="px-5 py-3 block">HOME</a>
         </li>
         <li className="relative group">
-          <div className="p-3 hover:bg-sky-300 hover:text-white rounded-md transition-all cursor-pointer flex items-center gap-0.5">
+          <div className="px-5 py-3 hover:bg-sky-300 hover:text-white rounded-md transition-all cursor-pointer flex items-center gap-0.5">
             COLLECTIONS
-            <FontAwesomeIcon icon={faAngleDown} className="text-sm" />
+            <FontAwesomeIcon icon={faAngleDown} className="text-sm ml-1" />
           </div>
-          <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
-            <ul className="bg-white border border-gray-200 rounded-md shadow-lg overflow-hidden min-w-[200px]">
-              <li className="px-4 py-2 hover:bg-sky-300 hover:text-white cursor-pointer transition-colors">
-                WEEDING JEWELLERY
-              </li>
-              <li className="px-4 py-2 hover:bg-sky-300 hover:text-white cursor-pointer transition-colors">
-                SIGNATURE
-              </li>
-              <li className="px-4 py-2 hover:bg-sky-300 hover:text-white cursor-pointer transition-colors">
-                EVERYDAT ELEGANCE
-              </li>
-              <li className="px-4 py-2 hover:bg-sky-300 hover:text-white cursor-pointer transition-colors">
-                CELEBRATIONS
-              </li>
-            </ul>
+          <div className="absolute right-1 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+            <div className="bg-white border border-gray-200 shadow-lg overflow-hidden flex w-[500px]">
+              {/* Left side - Menu items */}
+              <ul className="w-1/2 border-r border-gray-200">
+                <li className="px-5 py-2 hover:bg-sky-300 hover:text-white cursor-pointer transition-colors">
+                  WEEDING JEWELLERY
+                </li>
+                <li className="px-5 py-2 hover:bg-sky-300 hover:text-white cursor-pointer transition-colors">
+                  SIGNATURE
+                </li>
+                <li className="px-5 py-2 hover:bg-sky-300 hover:text-white cursor-pointer transition-colors">
+                  EVERYDAY ELEGANCE
+                </li>
+                <li className="px-5 py-2 hover:bg-sky-300 hover:text-white cursor-pointer transition-colors">
+                  CELEBRATIONS
+                </li>
+              </ul>
+              
+              {/* Right side - Images */}
+              <div className="w-1/2 p-3">
+                <div className="grid grid-cols-2 gap-2 h-full">
+                  <div className="h-32 overflow-hidden rounded-md">
+                    <img 
+                      src={traditional} 
+                      alt="Traditional Jewelry" 
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="h-32 overflow-hidden rounded-md">
+                    <img 
+                      src={wedding} 
+                      alt="Wedding Jewelry" 
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </li>
-        <li className="p-3 hover:bg-sky-300 hover:text-white rounded-md transition-all cursor-pointer">
-          About
+        <li className="hover:bg-sky-300 hover:text-white rounded-md transition-all cursor-pointer">
+          <a className="px-5 py-3 block">About</a>
         </li>
-        <li className="p-3 hover:bg-sky-300 hover:text-white rounded-md transition-all cursor-pointer">
-          Contact Us
+        <li className="hover:bg-sky-300 hover:text-white rounded-md transition-all cursor-pointer">
+          <a className="px-5 py-3 block">Contact Us</a>
         </li>
       </ul>
 
