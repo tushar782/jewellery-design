@@ -82,22 +82,34 @@ const Footer = () => {
                     <p className="text-center sm:text-left order-3 sm:order-1">© 2024 Anura Systems. All Rights Reserved.</p>
 
                     <div className="text-center order-1 sm:order-2">
-                        <p className="text-base font-bold">neelkanth</p>
-                        <p className="text-base font-bold">JEWELLERS</p>
-                        <p className="text-sm">A WORLD OF DESIGNS</p>
+                        <div className="flex flex-col items-center">
+                            <span
+                                className="text-lg md:text-xl text-blue-600 hover:scale-105 transition-all"
+                                style={{ fontFamily: "cursive" }}
+                            >
+                                neelkanth
+                            </span>
+                            <span className="text-xs md:text-sm text-red-500 hover:scale-105 transition-all">
+                                J E W E L L E R S
+                            </span>
+                            <span className="text-[10px] md:text-xs hover:scale-105 transition-all">
+                                A WORLD DESIGNS
+                            </span>
+                        </div>
                     </div>
 
+
                     <div className="flex space-x-6 order-2 sm:order-3">
-                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" 
-                           className="text-gray-800 hover:text-gray-600 text-xl">
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                            className="text-gray-800 hover:text-gray-600 text-xl">
                             <FaLinkedin />
                         </a>
-                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" 
-                           className="text-gray-800 hover:text-gray-600 text-xl">
+                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"
+                            className="text-gray-800 hover:text-gray-600 text-xl">
                             <FaTwitter />
                         </a>
-                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" 
-                           className="text-gray-800 hover:text-gray-600 text-xl">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                            className="text-gray-800 hover:text-gray-600 text-xl">
                             <FaFacebook />
                         </a>
                     </div>
