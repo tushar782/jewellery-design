@@ -1,5 +1,5 @@
 import gold from '../assets/goldcard.jpg';
-import diamond from '../assets/j1.jpg'; // Add respective images
+import diamond from '../assets/j1.jpg';
 import silver from '../assets/j2.jpg';
 import gems from '../assets/j3.jpg';
 import wedding from '../assets/j4.jpg';
@@ -37,12 +37,11 @@ const Jewellery = () => {
                             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
-                            <button className="bg-white text-black px-4 py-2 flex items-center justify-center gap-2 hover:bg-black hover:text-white transition-colors duration-300">
-                                {item.buttonText}
-                                <FaArrowRight className="text-white group-hover:text-black transition-colors duration-300" />
+                            <button className="w-full bg-white text-black px-4 py-2 flex items-center justify-between group/button hover:bg-black hover:text-white transition-colors duration-300">
+                                <span>{item.buttonText}</span>
+                                <FaArrowRight className="text-black group-hover/button:text-white transition-colors duration-300" />
                             </button>
                         </div>
-
                     </div>
                 ))}
             </div>
